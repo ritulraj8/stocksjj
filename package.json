@@ -1,0 +1,37 @@
+{
+  "name": "stockwarehouse",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.23.5",
+    "@heroicons/react": "^2.1.5",
+    "bcrypt": "^5.1.1",
+    "highcharts": "^11.4.6",
+    "highcharts-react-official": "^3.2.1",
+    "meteor": "^3.0.2",
+    "meteor-node-stubs": "^1.2.7",
+    "moment": "^2.30.1",
+    "node-fetch": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.25.1",
+    "recharts": "^2.12.7"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4"
+  }
+}
